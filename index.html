@@ -1,46 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizzling Spices Kitchen</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sizzling Spices - Delicious Indian & Chinese Cuisine" />
+  <title>Sizzling Spices | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ff4d00;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x600/?restaurant,food');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 50px;
+    }
+    .section {
+      padding: 60px 40px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #ff4d00;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      margin: 20px;
+      overflow: hidden;
+    }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 15px;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #ff4d00;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<header style="background-color: red; padding: 10px 0; text-align: center;">
+  <header>
+    <div><strong>Sizzling Spices</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h1 class="title" style="font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; color: white; margin: 0; line-height: 1;">
-        Sizzling Spices Kitchen
-    </h1>
+  <section class="hero">
+    <div>
+      <h1>Delicious Indian & Chinese Cuisine</h1>
+      <p>Order now on Zomato & Swiggy</p>
+    </div>
+  </section>
 
-    <nav style="margin-top: 10px;">
-        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
-        <a href="about.html" style="color: white; margin: 0 10px; text-decoration: none;">About Us</a>
-        <a href="contact.html" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
-    </nav>
+  <section class="section" id="menu">
+    <h2>Our Bestsellers</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?biryani" alt="Biryani">
+        <h3>Chicken Biryani</h3>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?noodles" alt="Noodles">
+        <h3>Hakka Noodles</h3>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?paneer" alt="Paneer">
+        <h3>Paneer Butter Masala</h3>
+      </div>
+    </div>
+  </section>
 
-</header>
-    
-<nav style="text-align: center; margin-top: 10px;">
-    <a href="index.html" style="margin: 0 10px;">Home</a>
-    <a href="about.html" style="margin: 0 10px;">About Us</a>
-    <a href="contact.html" style="margin: 0 10px;">Contact</a>
-</nav>
-    
-    <main>
-        <section id="menu-section">
-            <h2>Menu</h2>
-            <div class="menu-tabs">
-                <button onclick="showMenu('indian')">Indian Menu</button>
-                <button onclick="showMenu('chinese')">Chinese Menu</button>
-            </div>
-            <div id="menu-items"></div>
-        </section>
-    </main>
-    <footer>
-        <a href="https://wa.me/9833321200" target="_blank"><img src="whatsapp.png" alt="WhatsApp" class="social-icon"></a>
-        <a href="https://www.instagram.com/sizzlingspicekitchen" target="_blank"><img src="instagram.png" alt="Instagram" class="social-icon"></a>
-    </footer>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width: 800px; margin: auto;">
+      Welcome to Sizzling Spices – your go-to place for mouth-watering Indian and Chinese food. We take pride in delivering rich flavors with every bite. Join us on Zomato & Swiggy for a sizzling experience!
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+      Phone: +91-XXXXXXXXXX | Instagram: @sizzlingspices | WhatsApp Available<br>
+      <a href="https://www.zomato.com" target="_blank">Order on Zomato</a> | <a href="https://www.swiggy.com" target="_blank">Order on Swiggy</a>
+    </p>
+  </section>
+
+  <footer>
+    <div>&copy; 2025 Sizzling Spices. All rights reserved.</div>
+    <div class="social-icons">
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
 </body>
 </html>
+
