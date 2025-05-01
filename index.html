@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sizzling Spices - Delicious Indian & Chinese Cuisine" />
-  <title>Sizzling Spices | Home</title>
+  <meta name="description" content="Sizzling Spices - Delicious Indian & Chinese Cuisine in your city." />
+  <meta name="keywords" content="Sizzling Spices, Indian food, Chinese food, Order Online, Zomato, Swiggy" />
+  <meta name="author" content="Sizzling Spices" />
+  <title>Sizzling Spices | Order Delicious Indian & Chinese Food</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #fff8f0;
       color: #333;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #ff4d00;
@@ -21,12 +27,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
       font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .hero {
       background-image: url('https://source.unsplash.com/1600x600/?restaurant,food');
@@ -44,9 +56,11 @@
     .hero h1 {
       font-size: 50px;
       margin: 0;
+      animation: fadeIn 1.5s ease-in;
     }
     .hero p {
       margin: 10px 0 20px;
+      animation: fadeIn 2s ease-in;
     }
     .order-buttons a {
       display: inline-block;
@@ -58,6 +72,7 @@
       font-weight: bold;
       text-decoration: none;
       transition: 0.3s;
+      animation: fadeIn 2.5s ease-in;
     }
     .order-buttons a:hover {
       background-color: #ff4d00;
@@ -65,6 +80,7 @@
     }
     .section {
       padding: 60px 40px;
+      animation: fadeIn 1s ease-in;
     }
     .section h2 {
       text-align: center;
@@ -108,6 +124,18 @@
     }
     .social-icons a:hover {
       color: #fff;
+    }
+    iframe {
+      display: block;
+      margin: 30px auto 0;
+      border: 0;
+      width: 90%;
+      height: 300px;
+      border-radius: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -166,6 +194,7 @@
       <strong>WhatsApp:</strong> <a href="https://wa.me/919833321200" target="_blank">Chat on WhatsApp</a><br>
       <a href="https://link.zomato.com/xqzv/rshare?id=99647902305639ec" target="_blank">Order on Zomato</a> | <a href="https://www.swiggy.com/direct/brand/609809?source=swiggy-direct&subSource=generic" target="_blank">Order on Swiggy</a>
     </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160991674!2d72.741099!3d19.082197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzU2LjAiTiA3MsKwNDQnNDcuMCJF!5e0!3m2!1sen!2sin!4v1583900079647!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <footer>
